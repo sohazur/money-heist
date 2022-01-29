@@ -1,19 +1,21 @@
 import React from "react";
 import "./Character.css";
-const Character = () => {
+const Character = (props) => {
+  const { name, aliasName, age, occupation, firstAppearance, img } = props;
   return (
-    <div className="col">
+    <div className="col-4 g-3 d-flex align-items-stretch">
       <div className="card custom-card">
-        <img src="" className="card-img-top" alt="..." />
+        <img src={img} className="card-img-top w-75 m-auto" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <h1 className="card-title">{aliasName}</h1>
+          <h3>Real Name: {name}</h3>
+          <h3>Age: {age}</h3>
+          <h3>Occupation: {occupation}</h3>
+          <h3>Debut: {firstAppearance}</h3>
+
           <button className="btn btn-custom">
             <a href="/player" className="">
-              Go somewhere
+              Use This Character
             </a>
           </button>
         </div>
