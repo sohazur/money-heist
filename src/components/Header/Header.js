@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header container">
       <h1>LA CASA DE PAPEL</h1>
       <hr />
       <h4>THE FIRST INTERNATIONAL HEIST</h4>
