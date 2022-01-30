@@ -16,24 +16,26 @@ const Category = () => {
     setCart(newCart);
   };
   return (
-    <div className="container">
-      <div className="row">
-        {characters.map((character) => (
-          <Character
-            key={character.id}
-            id={character.id}
-            img={character.img}
-            name={character.name}
-            aliasName={character.aliasName}
-            firstAppearance={character.firstAppearance}
-            age={character.age}
-            occupation={character.occupation}
-            handleTrack={handleTrack}
-          ></Character>
-        ))}
-        <div>
-          <Cart cart={cart}></Cart>
+    <div className="container d-flex">
+      <div className="w-75">
+        <div className="row">
+          {characters.map((character) => (
+            <Character
+              key={character.id}
+              id={character.id}
+              img={character.img}
+              name={character.name}
+              aliasName={character.aliasName}
+              firstAppearance={character.firstAppearance}
+              age={character.age}
+              occupation={character.occupation}
+              handleTrack={handleTrack}
+            ></Character>
+          ))}
         </div>
+      </div>
+      <div>
+        <Cart cart={cart}></Cart>
       </div>
     </div>
   );
