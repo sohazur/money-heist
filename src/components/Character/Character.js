@@ -1,8 +1,9 @@
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Character.css";
 const Character = (props) => {
   const {
-    id,
     name,
     aliasName,
     age,
@@ -11,6 +12,8 @@ const Character = (props) => {
     img,
     handleTrack,
   } = props;
+  // Font Awesome Icon
+  const iconAdd = <FontAwesomeIcon icon={faUserPlus} />;
   return (
     <div className="col-4 g-3 d-flex align-items-stretch">
       <div className="card custom-card">
@@ -22,7 +25,7 @@ const Character = (props) => {
           <h3>Occupation: {occupation}</h3>
           <h3>Debut: {firstAppearance}</h3>
           <button onClick={() => handleTrack(props)} className="btn btn-custom">
-            Use This Character
+            {iconAdd} Use This Character
           </button>
         </div>
       </div>
