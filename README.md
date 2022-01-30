@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Money Heist Game Using React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The live website is [Available here!](https://money-heist-sohazur.netlify.app/)
+
+## Things you can do:
+
+- You can select characters from Money Heist
+- You can see how many characters you have chosen
+- You can see the total price for selecting the characters
 
 ## Available Scripts
 
