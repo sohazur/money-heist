@@ -16,17 +16,20 @@ const Character = (props) => {
   // Font Awesome Icon
   const iconAdd = <FontAwesomeIcon icon={faUserPlus} />;
   return (
-    <div className="col-4 g-3 d-flex align-items-stretch character">
-      <div className="card custom-card">
+    <div className="col-lg-4 col-md-6 col-sm-12 g-3 d-flex align-items-stretch character">
+      <div className="card custom-card p-3">
         <img src={img} className="card-img-top w-75 m-auto" alt="..." />
-        <div className="card-body">
+        <div className="card-body d-flex flex-column">
           <h1 className="card-title">{aliasName}</h1>
           <h4>Real Name: {name}</h4>
           <h4>Age: {age}</h4>
           <h4>Occupation: {occupation}</h4>
           <h4>Debut: {firstAppearance}</h4>
           <h4>Price: ${price}</h4>
-          <button onClick={() => handleTrack(props)} className="btn btn-custom">
+          <button
+            onClick={() => handleTrack(props)}
+            className="btn btn-custom mt-auto"
+          >
             {iconAdd} Use This Character
           </button>
         </div>
