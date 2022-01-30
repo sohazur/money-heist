@@ -19,7 +19,7 @@ const Category = () => {
     setCart(newCart);
   };
   return (
-    <div className="container d-flex">
+    <div className="container d-flex my-5">
       <div className="w-75">
         <div className="row">
           {/* Generating all the characters from DB */}
