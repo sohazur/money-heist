@@ -3,14 +3,17 @@ import Cart from "../Cart/Cart";
 import Character from "../Character/Character";
 import "./Category.css";
 const Category = () => {
+  // usestates
   const [characters, setCharacters] = useState([]);
   const [cart, setCart] = useState([]);
+  // useEffect to laod data
   useEffect(() => {
     fetch("./characterDb.JSON")
       .then((res) => res.json())
       .then((data) => setCharacters(data));
   }, []);
 
+  // Function for tracking which character is being selected
   const handleTrack = (character) => {
     const newCart = [...cart, character];
     setCart(newCart);
@@ -19,6 +22,7 @@ const Category = () => {
     <div className="container d-flex">
       <div className="w-75">
         <div className="row">
+          {/* Generating all the characters from DB */}
           {characters.map((character) => (
             <Character
               key={character.id}
@@ -36,6 +40,7 @@ const Category = () => {
         </div>
       </div>
       <div>
+        {/* Component for Cart */}
         <Cart cart={cart}></Cart>
       </div>
     </div>

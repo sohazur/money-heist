@@ -5,7 +5,9 @@ import Header from "./components/Header/Header";
 function App() {
   return (
     <div className="App">
+      {/* Header Section */}
       <Header></Header>
+      {/* Category and Cart Section */}
       <Category></Category>
     </div>
   );
