@@ -9,13 +9,16 @@ const Cart = (props) => {
   }
   return (
     <div>
-      <h1>Player(s) Selected: {characterCount}</h1>
+      <h2>Player(s) Selected: {characterCount}</h2>
       <h4>Total Price: ${totalPrice}</h4>
-      <ol>
-        {cart.map((character) => (
-          <li key={character.id * Math.random()}>{character.aliasName}</li>
-        ))}
-      </ol>
+      {cart.map((character) => (
+        <div
+          className="show-name w-50 mx-auto mb-2"
+          key={character.id * Math.random()}
+        >
+          {character.aliasName}
+        </div>
+      ))}
     </div>
   );
 };
