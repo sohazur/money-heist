@@ -1,7 +1,16 @@
 import React from "react";
 import "./Character.css";
 const Character = (props) => {
-  const { name, aliasName, age, occupation, firstAppearance, img } = props;
+  const {
+    id,
+    name,
+    aliasName,
+    age,
+    occupation,
+    firstAppearance,
+    img,
+    handleTrack,
+  } = props;
   return (
     <div className="col-4 g-3 d-flex align-items-stretch">
       <div className="card custom-card">
@@ -12,11 +21,8 @@ const Character = (props) => {
           <h3>Age: {age}</h3>
           <h3>Occupation: {occupation}</h3>
           <h3>Debut: {firstAppearance}</h3>
-
-          <button className="btn btn-custom">
-            <a href="/player" className="">
-              Use This Character
-            </a>
+          <button onClick={() => handleTrack(props)} className="btn btn-custom">
+            Use This Character
           </button>
         </div>
       </div>

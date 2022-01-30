@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Alvaro Morte",
     "aliasName": "The Professor",
     "age": 50,
@@ -8,6 +9,7 @@
     "img": "https://www.pinkvilla.com/imageresize/money_heist_bts_2.jpg?width=752&format=webp&t=pvorg"
   },
   {
+    "id": 2,
     "name": "Silene Oliveira",
     "aliasName": "Tokyo",
     "age": 29,
@@ -16,6 +18,7 @@
     "img": "https://upload.wikimedia.org/wikipedia/en/d/dc/Tokyo_%28Money_Heist%29.jpg"
   },
   {
+    "id": 3,
     "name": "Andrés De",
     "aliasName": "Berlin",
     "age": 48,
@@ -24,6 +27,7 @@
     "img": "https://upload.wikimedia.org/wikipedia/en/4/45/Berlin_%28Money_Heist%29.jpg"
   },
   {
+    "id": 4,
     "name": "Ágata Jiménez",
     "aliasName": "Nairobi",
     "age": 37,
@@ -32,6 +36,7 @@
     "img": "https://www.pinkvilla.com/files/styles/amp_metadata_content_image_min_696px_wide/public/money-heist-season-5-nairobi.jpg?itok=XrcgeYmE"
   },
   {
+    "id": 5,
     "name": "Miguel Herrán",
     "aliasName": "Rio",
     "age": 25,
@@ -40,6 +45,7 @@
     "img": "https://pbs.twimg.com/media/Erd8FDdVcAY20Vp.jpg"
   },
   {
+    "id": 6,
     "name": "Jaime Lorente López",
     "aliasName": "Denver",
     "age": 30,
