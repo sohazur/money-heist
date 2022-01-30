@@ -29,6 +29,7 @@ const Category = () => {
               firstAppearance={character.firstAppearance}
               age={character.age}
               occupation={character.occupation}
+              price={character.price}
               handleTrack={handleTrack}
             ></Character>
           ))}

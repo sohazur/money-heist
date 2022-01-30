@@ -10,6 +10,7 @@ const Character = (props) => {
     occupation,
     firstAppearance,
     img,
+    price,
     handleTrack,
   } = props;
   // Font Awesome Icon
@@ -24,6 +25,7 @@ const Character = (props) => {
           <h4>Age: {age}</h4>
           <h4>Occupation: {occupation}</h4>
           <h4>Debut: {firstAppearance}</h4>
+          <h4>Price: ${price}</h4>
           <button onClick={() => handleTrack(props)} className="btn btn-custom">
             {iconAdd} Use This Character
           </button>
