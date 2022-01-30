@@ -10,7 +10,7 @@ const Cart = (props) => {
     totalPrice += character.price;
   }
   return (
-    <div>
+    <div className="m-5">
       <h2>Player(s) Selected: {characterCount}</h2>
       <h4>Total Price: ${totalPrice}</h4>
       {/* Showing all the selected character in UI */}
